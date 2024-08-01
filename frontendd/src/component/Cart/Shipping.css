@@ -1,0 +1,154 @@
+/* Container styling */
+.shippingContainer {
+  width: 100vw;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  background-color: #f5f5f5;
+}
+
+/* Box styling */
+.shippingBox {
+  background-color: white;
+  width: 30vw;
+  min-width: 320px;
+  height: auto;
+  max-height: 90vh;
+  box-sizing: border-box;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+}
+
+/* Heading styling */
+.shippingHeading {
+  text-align: center;
+  color: rgba(0, 0, 0, 0.8);
+  font: 500 1.5rem "Roboto", sans-serif;
+  padding: 1rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/* Form styling */
+.shippingForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  gap: 1.5rem;
+}
+
+.shippingForm > div {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  position: relative;
+}
+
+.shippingForm > div > input,
+.shippingForm > div > select {
+  padding: 0.75rem 1rem 0.75rem 3rem; /* Adjusted padding for left space */
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  font: 300 1rem "Roboto", sans-serif;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.shippingForm > div > input:focus,
+.shippingForm > div > select:focus {
+  border-color: #007bff;
+}
+
+.shippingForm > div > svg {
+  position: relative;
+  left: 0 rem;
+  font-size: 1.25rem;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+/* Button styling */
+.shippingBtn {
+  border: none;
+  background-color: tomato;
+  color: white;
+  font: 500 1rem "Roboto", sans-serif;
+  width: 100%;
+  padding: 0.75rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  border-radius: 4px;
+}
+
+.shippingBtn:hover {
+  background-color: rgb(179, 66, 46);
+}
+
+/* Responsive styling */
+@media screen and (max-width: 768px) {
+  .shippingBox {
+    width: 80vw;
+    min-width: 300px;
+  }
+
+  .shippingHeading {
+    font-size: 1.25rem;
+    padding: 0.75rem;
+  }
+
+  .shippingForm {
+    padding: 1.5rem;
+    gap: 1rem;
+  }
+
+  .shippingForm > div > input,
+  .shippingForm > div > select {
+    padding: 0.75rem 1rem 0.75rem 3rem; /* Consistent padding for left space */
+    font-size: 0.875rem;
+  }
+
+  .shippingForm > div > svg {
+    font-size: 1rem;
+  }
+
+  .shippingBtn {
+    font-size: 0.875rem;
+    padding: 0.75rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .shippingBox {
+    width: 90vw;
+  }
+
+  .shippingHeading {
+    font-size: 1rem;
+    padding: 0.5rem;
+  }
+
+  .shippingForm {
+    padding: 1rem;
+  }
+
+  .shippingForm > div > input,
+  .shippingForm > div > select {
+    padding: 0.75rem 1rem 0.75rem 3rem; /* Consistent padding for left space */
+    font-size: 0.75rem;
+  }
+
+  .shippingForm > div > svg {
+    font-size: 0.875rem;
+  }
+
+  .shippingBtn {
+    font-size: 0.75rem;
+    padding: 0.5rem;
+  }
+}
